@@ -1,0 +1,68 @@
+<nav id="navbar">
+    <div id="logo">
+        <img src="/assets/Img/logo.png" alt="www.vfx.com">
+    </div>
+    <ul>
+        <li class="item"><a (click)="Home()">Home</a></li>
+        <li class="item"><a (click)="Services()">Services</a></li>
+        <li class="item"><a (click)="AboutUs()">About Us</a></li>
+        <li class="item"><a (click)="ContactUs()">Contact Us</a></li>
+    </ul>
+
+</nav>
+
+<section id="Home">
+    <h1 class="h1-primary">Welcome To Vxf World</h1>
+    
+    <button class="btn">Join Now</button>
+</section>
+
+<section class="services">
+    <h1 class="h2-primary center">Our Services</h1>
+    <div id="services">
+        <div class="box">
+            <img src="/assets/Img/gaming.png" alt="">
+            <h2 class="h1-secondary center"> Gaming Design</h2>
+            <button class="btn-1" (click)="Join()">Join Now</button>
+
+        </div>
+        <div class="box">
+            <img src="/assets/Img/movie.png" alt="">
+            <h2 class="h1-secondary center">Movie Editing</h2>
+            <button class="btn-1" (click)="Join()">Join Now</button>
+
+        </div>
+        <div class="box">
+            <img src="/assets/Img/dslr.png" alt="">
+            <h2 class="h1-secondary center">Photography Courses</h2>
+            <button class="btn-1" (click)="Join()">Join Now</button>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    
+    <div id="contact-box">
+        <form #usersForm="ngForm" (ngSubmit)="getUserFormData(usersForm.value)">
+            <div class="form-group"> 
+                <label for="name">Email:<span style=" color: red; ">*</span> </label>
+                <input type="Email"[ngModelOptions]="{standalone: true}" [(ngModel)]="Email" placeholder="Enter Your Email " >
+                <br>
+                <label for="name">MobileNo: <span style=" color: red; ">*</span></label>
+                <input type="MobileNo" [ngModelOptions]="{standalone: true}" [(ngModel)]="MobileNo" placeholder="Enter Your MobileNo " >
+                <br>
+                <label for="Message"> Message: </label>
+                <textarea name="Message" [ngModelOptions]="{standalone: true}" [(ngModel)]="Message" placeholder="Enter Your Message " ></textarea>
+                <br>
+                <br>
+                
+                <button class="btn" >Submit</button>
+                
+            </div>   
+        </form>  
+    </div>
+</section>
+
+
+
+

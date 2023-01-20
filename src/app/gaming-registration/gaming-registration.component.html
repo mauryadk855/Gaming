@@ -1,0 +1,81 @@
+<nav id="navbar">
+    <div id="logo">
+        <img src="/assets/Img/logo.png" alt="www.vfx.com">
+    </div>
+    <ul>
+        <li class="item"><a (click)="Home()">Home</a></li>
+        <li class="item"><a (click)="Services()">Services</a></li>
+        <li class="item"><a (click)="AboutUs()">About Us</a></li>
+        <li class="item"><a (click)="ContactUs()">Contact Us</a></li>
+    </ul>
+
+</nav>
+
+<section id="Home">
+    <h1 class="h1-primary">Registration Form</h1>
+
+</section>
+<section id="contact">
+    <div class="row">
+        <div class="col-md-12">
+        </div>
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+            <div id="contact-box">
+                <form #usersForm="ngForm" (ngSubmit)="getuserFormData(usersForm.value)">
+                    <div class="form-group">
+                        <label for="name">First Name:<span style=" color: red; "></span> </label>
+                        <input type="First Name" [ngModelOptions]="{standalone: true}" [(ngModel)]="FirstName"
+                            placeholder="Enter Your First Name">
+                        <br>
+                        <label for="name">Middle Name: <span style=" color: red; "></span></label>
+                        <input type="Middle Name" [ngModelOptions]="{standalone: true}" [(ngModel)]="MiddleName"
+                            placeholder="Enter Your Middle Name ">
+                        <br>
+                        <label for="name">Last Name: <span style=" color: red; "></span></label>
+                        <input type="Last Name" [ngModelOptions]="{standalone: true}" [(ngModel)]="LastName"
+                            placeholder="Enter Your Last Name ">
+                        <br>
+                        <label for="name">Date of Birth: <span style=" color: red; "></span></label>
+                        <input type="Date of Birth" [ngModelOptions]="{standalone: true}" [(ngModel)]="DateofBirth"
+                            placeholder="Enter Your Date of Birth ">
+                        <br>
+                        <label for="name">Gender: <span style=" color: red; "></span></label>
+                        <input type="Gender" [ngModelOptions]="{standalone: true}" [(ngModel)]="Gender"
+                            placeholder="Enter Your Gender ">
+                        <br>
+                        <label for="name">Address: <span style=" color: red; "></span></label>
+                        <input type="Address" [ngModelOptions]="{standalone: true}" [(ngModel)]="Address"
+                            placeholder="Enter Your Address ">
+                        <br>
+                        <label for="name">City: <span style=" color: red; "></span></label>
+                        <input type="City" [ngModelOptions]="{standalone: true}" [(ngModel)]="City"
+                            placeholder="Enter Your City ">
+                        <br>
+                        <label for="name">Pincode: <span style=" color: red; "></span></label>
+                        <input type="Pincode" [ngModelOptions]="{standalone: true}" [(ngModel)]="Pincode"
+                            placeholder="Enter Your Pincode ">
+                        <br>
+                        <label for="name">Email:<span style=" color: red; "></span> </label>
+                        <input type="Email" [ngModelOptions]="{standalone: true}" [(ngModel)]="Email"
+                            placeholder="Enter Your Email">
+                        <br>
+                        <label for="name">Mobile_Number: <span style=" color: red; "></span></label>
+                        <input type="Mobile_Number" [ngModelOptions]="{standalone: true}" [(ngModel)]="Mobile_Number"
+                            placeholder="Enter Your Mobile_Number ">
+                        <br>
+                        <label for="name">Courses: <span style=" color: red; "></span></label>
+                        <input type="Courses" [ngModelOptions]="{standalone: true}" [(ngModel)]="Courses"
+                            placeholder="Enter Your Courses ">
+
+                        <button class="btn">Submit</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+</section>

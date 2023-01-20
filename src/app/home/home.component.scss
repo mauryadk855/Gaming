@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+
+}
+
+/* Navigation Bar: Logo And Image */
+#logo {
+    margin: 1px 34px;
+}
+
+#logo img {
+    height: 4rem;
+    margin: 1px 4px;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background-attachment: fixed;
+
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* home section */
+#home::before {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 200px;
+    height: 400px;
+}
+
+#Home  {
+    content: "";
+    position: absolute;
+    background: url('/assets/Img/bg1.jpg') no-repeat center center/cover;
+    height: 600px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -100;
+    opacity: 1;
+    display: block;
+}
+
+#Home h1 {
+    color: white;
+    text-align: center;
+
+}
+
+/* services section  */
+#services {
+    display: flex;
+
+}
+
+.h2-primary {
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin-top: 150px;
+
+}
+
+#services .box {
+    margin: 35px 20px;
+    padding: 2px 1px;
+    background-color: #c7c7c7;
+    border: 2px solid brown;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+}
+
+#services .box:hover {
+    background-color: rgb(232, 97, 48);
+    color: white;
+
+
+}
+
+#services .box img {
+    height: 270px;
+    margin: auto;
+    display: block;
+    margin-top: 15px;
+}
+
+
+/* utility class */
+.h1-primary {
+    font-size: 4rem;
+    padding: 150px;
+    color: white;
+    text-align: center;
+}
+
+.h1-secondary {
+    
+    padding: 12px;
+    
+}
+
+#Home p {
+    color: white;
+    font-size: 1.5rem;
+    background-color: aqua;
+}
+
+section .btn {
+    padding: 10px 40px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 1.8rem;
+    border-color: 2px solid green;
+
+}
+
+section .btn:hover {
+    background-color: green;
+    transition: 0.2s;
+}
+
+.center {
+    text-align: center;
+}
+
+.box .btn-1 {
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    margin: auto;
+    border-radius: 10px;
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.box .btn-1:hover {
+    background-color: green;
+    color: black;
+    transition: 0.2s;
+}
+
+/* contact section  */
+#contact-box {
+    position: relative;
+}
+
+#contact-box {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+    background: url('/assets/Img/background-contact.png') no-repeat center center/cover;
+
+}
+
+#contact-box{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+.btn-3{
+    padding-top: 10px;
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    /* margin: auto; */
+    border-radius: 10px;
+    /* display: block; */
+    background-color: rgb(159, 82, 82);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 30px;
+
+}
+.btn-3:hover{
+    background-color: green;
+    color: white;
+    transition: 0.2s;
+}
+
+
+
+
+
+#contact-box .form-group{
+    /* width: 120%; */
+    
+    padding-top: 10px;
+    width: 50%;
+    padding: 1px;
+    margin-top: 17px;
+}
+#contact-box label{
+    font-size: 1.8rem;
+    color: white;
+   
+}
+#contact-box input,
+#contact-box textarea{
+    width: 200%;
+    padding: 0.7rem;
+    margin-top: 5px;
+    font-size: 1rem;
+    border-radius: 12px;
+}
+
+#contact-box{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
